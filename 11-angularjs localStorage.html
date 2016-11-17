@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angularjs</title>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+
+</head>
+
+<body ng-app="myApp">
+
+    <div ng-controller="firstContrller">
+    	
+    </div>
+
+</body>
+</html>
+<script>
+	// 匿名函数
+//	var setItem = function (key, value) {
+//		localStorage.setItem(key, JSON.stringify(value));
+//	}
+	
+	// 函数的对象写法
+//	function fun1 () {
+//		var nameObj = {
+//			name: function() {
+//				return 1;
+//			},
+//			age: 30
+//		}
+//		return nameObj;
+//	}
+//	
+//	fun1().name();
+
+	// 设置cookie
+//	document.cookie = 'name=张三';
+
+    var app=angular.module('myApp',[]);
+
+    app.controller('firstContrller',function($scope, localStorage, cookie){
+    	
+    	// 设置localStorage
+  	localStorage.set('name', '张三');
+  	localStorage.set('nameArr',['张三', '李四', '王五'] );
+
+		localStorage.set('age', 30);
+		
+		localStorage.set('sex', 'ladyboy');
+    	
+    	// 获取localStorage
+  		console.log(localStorage.get('name'));
+  		console.log(localStorage.get('nameArr'));
+    	
+    	// 设置cookie存储
+    	cookie.set('name', '赵六');
+    })
+
+	// 自定义服务有三种模式
+	/*
+	 * 第一种： service   服务模式
+	 * 第二种：factory   工厂模式
+	 * 第三钟： provider 供应商模式
+	 */
+	
+	// service - 服务模式
+	app.service('localStorage', function () {
+		this.set = function (key, value) {
+			localStorage.setItem(key, JSON.stringify(value));
+		}
+		this.get = function (key) {
+			return localStorage.getItem(key);
+		}
+	})
+	
+	// factory 工厂模式
+//	app.factory('localStorage', function () {
+//		var local = {
+//			set: function (key, value) {
+//				localStorage.setItem(key, JSON.stringify(value));
+//			},
+//			get: function (key) {
+//				return localStorage.getItem(key);
+//			}
+//		}
+//		
+//		return local;
+//	})
+	
+	// provider 供应商模式
+//	app.provider('localStorage', function () {
+//		this.$get = function () {
+//			var local = {
+//			set: function (key, value) {
+//				localStorage.setItem(key, JSON.stringify(value));
+//			},
+//			get: function (key) {
+//				return localStorage.getItem(key);
+//			}
+//		}
+//		
+//		return local;
+//		}
+//	})
+
+	// service服务模式定制一个cookie的服务
+	app.service('cookie', function () {
+		this.set = function(key, value) {
+			document.cookie = key + '=' + value;
+		}
+	})
+    
+</script>
