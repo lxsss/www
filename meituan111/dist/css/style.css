@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 50px;
+}
+body {
+  font-family: "微软雅黑";
+  font-size: 0.28em;
+  background: #f0efed;
+  line-height: 1;
+  height: 50px;
+  color: #333;
+  width: 100%;
+}
+body a {
+  text-decoration: none;
+}
+body .navbar {
+  width: 100%;
+  height: 1.01rem;
+  color: #fff;
+  background: #06c1ae;
+  border-bottom: 1px solid #21897d;
+  position: relative;
+  display: flex;
+}
+body .navbar .nav-wrap-left {
+  height: 1.01rem;
+  line-height: 1.01rem;
+}
+body .navbar .nav-wrap-left a {
+  display: block;
+  color: #fff;
+  height: 100%;
+}
+body .navbar .nav-wrap-left a span {
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  margin-right: .2rem;
+  margin-left: .2rem;
+  font-size: .32rem;
+  position: relative;
+}
+body .navbar .nav-wrap-left a span .jian {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: -4px;
+}
+body .navbar .box-search {
+  height: .64rem;
+  line-height: .64rem;
+  background: rgba(0, 0, 0, 0.15);
+  margin-top: .2rem;
+  position: relative;
+  border-radius: .06rem;
+  margin-left: 20px;
+  flex: 6;
+}
+body .navbar .box-search a {
+  display: block;
+  color: #fff;
+}
+body .navbar .box-search a i {
+  font-size: .3rem;
+  position: absolute;
+  left: .2rem;
+}
+body .navbar .box-search a span {
+  font-size: .26rem;
+  color: #68dbce;
+  padding-left: .6rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+}
+body .navbar .nav-wrap-right {
+  height: 100%;
+}
+body .navbar .nav-wrap-right a {
+  display: inline-block;
+  height: 100%;
+  line-height: 1rem;
+  text-align: center;
+  width: .94rem;
+  margin-right: .04rem;
+  color: #fff;
+}
+body .navbar .nav-wrap-right a span {
+  display: inline-block;
+  font-size: .08rem;
+  line-height: 1;
+  vertical-align: middle;
+}
+body .navbar .nav-wrap-right a span i {
+  display: block;
+  margin: auto;
+  margin-bottom: .12rem;
+  font-size: .5rem;
+}
+body .tip a {
+  text-align: center;
+  display: block;
+}
+body .tip a img {
+  width: 6.4rem;
+}
+body .swiper-container {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #DDD8CE;
+}
+body .swiper-container .swiper-wrapper {
+  height: 3.6rem;
+  position: relative;
+}
+body .swiper-container .swiper-wrapper .swiper-slide {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+body .swiper-container .swiper-wrapper .swiper-slide:after {
+  content: ".";
+  height: 0;
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+body .swiper-container .swiper-wrapper .swiper-slide .icon {
+  list-style: none;
+  width: 20%;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+}
+body .swiper-container .swiper-wrapper .swiper-slide .icon a {
+  display: block;
+  padding: .2rem 0;
+  color: #06c1ae;
+}
+body .swiper-container .swiper-wrapper .swiper-slide .icon a .new-icon-circle {
+  display: block;
+  margin: auto;
+  margin-bottom: .14rem;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 10rem;
+  text-align: center;
+  line-height: .8rem;
+  font-size: .5rem;
+  color: #fff;
+  font-weight: 800;
+}
+body .swiper-container .swiper-wrapper .swiper-slide .icon a .icon-desc {
+  text-align: center;
+  font-size: .24rem;
+  color: #666;
+}
+body .list {
+  width: 100%;
+  border-top: 1px solid #DDD8CE;
+  border-bottom: 1px solid #DDD8CE;
+  margin-top: .2rem;
+  background-color: #fff;
+}
+body .list dd {
+  padding: .12rem;
+  display: flex;
+  text-align: center;
+}
+body .list dd .info {
+  vertical-align: top;
+  width: 1.7rem;
+  text-align: left;
+  display: inline-block;
+}
+body .list dd .info strong {
+  margin-top: .3rem;
+  margin-bottom: .25rem;
+  display: block;
+  color: #55a40f;
+  font-size: .3rem;
+}
+body .list dd .info small {
+  color: #666;
+}
+body .list dd .left {
+  flex: 1;
+}
+body .list dd .left a {
+  display: block;
+  border-right: 1px solid #ddd8ce;
+  height: 2.96rem;
+}
+body .list dd .left a .imgbox {
+  background: none;
+  width: 1.76rem;
+  height: 1.76rem;
+  margin: auto;
+  display: block;
+}
+body .list dd .left a .imgbox img {
+  height: 100%;
+}
+body .list dd .right {
+  flex: 2;
+}
+body .list dd .right .top a {
+  display: block;
+  height: 1.46rem;
+  border-bottom: 1px solid #DDD8CE;
+}
+body .list dd .right .top a .info strong {
+  color: #ff3f0d;
+}
+body .list dd .right .top a .imgbox {
+  background: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  display: inline-block;
+}
+body .list dd .right .top a .imgbox img {
+  height: 100%;
+}
+body .list dd .right .bottom {
+  display: flex;
+}
+body .list dd .right .bottom a {
+  flex: 1;
+  height: 1.48rem;
+}
+body .list dd .right .bottom .scense .info strong {
+  color: #f742a0;
+  margin-bottom: .14rem;
+  margin-top: .12rem;
+}
+body .list dd .right .bottom .scense .imgbox {
+  background: none;
+  width: .7rem;
+  height: .7rem;
+  display: block;
+  margin: auto;
+}
+body .list dd .right .bottom .scense .imgbox img {
+  height: 100%;
+}
+body .list dd .right .bottom .mingdian {
+  border-left: 1px solid #ddd8ce;
+}
+body .list dd .right .bottom .mingdian .info strong {
+  color: #ff8601;
+  margin-bottom: .14rem;
+  margin-top: .12rem;
+}
+body .list dd .right .bottom .mingdian .info small {
+  display: block;
+  margin-bottom: .2rem;
+  margin-top: .2rem;
+}
+body .list dd .right .bottom .mingdian .info .span-time {
+  display: inline-block;
+  background-color: #4C4C4C;
+  width: .4rem;
+  height: .3rem;
+  border-radius: .06rem;
+  text-align: center;
+  line-height: .3rem;
+  font-size: .24rem;
+  color: #fff;
+}
+body .guess-like {
+  width: 100%;
+  border-top: 1px solid #DDD8CE;
+  border-bottom: 1px solid #DDD8CE;
+  margin-top: .2rem;
+  background-color: #fff;
+  min-height: 5rem;
+  position: relative;
+}
+body .guess-like dl {
+  padding-left: .2rem;
+}
+body .guess-like dl dt {
+  font-size: .34rem;
+  padding-bottom: .2rem;
+  color: #333;
+  padding: .28rem .2rem;
+  padding-left: 0;
+  border-bottom: 1px solid #DDD8CE;
+}
+body .guess-like dl dd {
+  width: 100%;
+  border-bottom: 1px solid #DDD8CE;
+  overflow: hidden;
+}
+body .guess-like dl dd a {
+  display: block;
+  overflow: hidden;
+  padding: .28rem .2rem;
+  padding-left: 0;
+}
+body .guess-like dl dd a .dealcard {
+  position: relative;
+  margin: -0.08rem 0;
+  overflow: hidden;
+}
+body .guess-like dl dd a .dealcard .dealcard-nobooking {
+  overflow: hidden;
+  z-index: 1;
+  font-size: .24rem;
+  background: #06c1ae;
+  color: #fff;
+  padding: .05rem;
+  position: absolute;
+  width: 1.3rem;
+  text-align: center;
+  transform: rotateZ(-45deg);
+  left: -0.35rem;
+  top: .2rem;
+}
+body .guess-like dl dd a .dealcard .imgbox {
+  float: left;
+  background: none;
+  width: 1.8rem;
+  height: 1.64rem;
+  text-align: center;
+  overflow: hidden;
+}
+body .guess-like dl dd a .dealcard .imgbox img {
+  width: 100%;
+  height: 100%;
+}
+body .guess-like dl dd a .dealcard .like-right {
+  margin-left: 2rem;
+  position: relative;
+  height: 1.64rem;
+}
+body .guess-like dl dd a .dealcard .like-right .r-brand {
+  padding-top: .1rem;
+  margin-bottom: .12rem;
+  font-size: .3rem;
+  color: #333;
+}
+body .guess-like dl dd a .dealcard .like-right .r-title {
+  font-size: .24rem;
+  height: .68rem;
+  color: #666;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body .guess-like dl dd a .dealcard .like-right .r-price {
+  width: 100%;
+  position: relative;
+  color: #666;
+}
+body .guess-like dl dd a .dealcard .like-right .r-price .p-strong {
+  font-size: .38rem;
+  color: #06c1ae;
+  font-weight: 500;
+}
+body .guess-like dl dd a .dealcard .like-right .r-price .p-strong-color {
+  font-size: .26rem;
+  color: #06c1ae;
+}
+body .guess-like dl dd a .dealcard .like-right .r-price del {
+  text-decoration: none;
+  font-size: .24rem;
+}
+body .guess-like dl dd a .dealcard .like-right .r-price .p-num {
+  float: right;
+  padding-top: 6px;
+  font-size: .24rem;
+}
+body #loading {
+  text-align: center;
+  margin-top: 100px;
+}
+body footer {
+  margin-top: .3rem;
+  padding: 0 .2rem .4rem;
+  background-color: #f0efed;
+}
+body footer .footer-bar {
+  font-size: .28rem;
+  margin-bottom: .4rem;
+}
+body footer .footer-bar .pull-right {
+  float: right!important;
+}
+body footer .footer-bar .footer-citybtn {
+  width: 1.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body footer .footer-bar .btn-weak {
+  border: .02rem solid #06c1ae;
+  padding: 0 .3rem;
+  background: 0;
+  color: #06c1ae;
+}
+body footer .footer-bar .btn {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  height: .6rem;
+  border-radius: .06rem;
+  font-size: .28rem;
+  vertical-align: middle;
+  line-height: .6rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+}
+body footer .footer-nav {
+  margin-bottom: .18rem;
+}
+body footer .footer-nav ul {
+  margin: 0;
+  padding: .18rem 0;
+  font-size: .24rem;
+  white-space: nowrap;
+  display: flex;
+}
+body footer .footer-nav ul li {
+  list-style: none;
+  flex: 1;
+  border-right: .02rem solid #666;
+  text-align: center;
+}
+body footer .footer-nav ul li a {
+  color: #06c1ae;
+  display: block;
+  height: 100%;
+}
+body footer .footer-nav ul li:nth-child(5) {
+  border-right: 0;
+}
+body footer .footer-links {
+  font-size: .24rem;
+  margin: .3rem .2rem;
+  text-align: center;
+}
+body footer .footer-links a {
+  color: #06c1ae;
+  text-decoration: none;
+  outline: 0;
+}
+body footer .footer-copyright {
+  color: #999;
+  font-size: .22rem;
+  text-align: center;
+  position: relative;
+}
+body footer .footer-copyright .hr {
+  display: block;
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border-top: 1px solid #999;
+}
+body footer .footer-copyright .footer-copyright-text {
+  position: relative;
+  padding: 0 .3rem;
+  background-color: #f0efed;
+}
+body footer .footer-copyright a {
+  text-decoration: none;
+  color: #999;
+}
+body .go-top {
+  display: none;
+  position: fixed;
+  right: .3rem;
+  bottom: 1.5rem;
+  width: .86rem;
+  height: .86rem;
+  line-height: .86rem;
+  background: #06c1ae;
+  z-index: 130;
+  border-radius: 50%;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  font-size: .5rem;
+}
+body .go-top a {
+  display: block;
+  height: 100%;
+}
+body .go-top a .text-icon {
+  font-family: base_icon;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+}
